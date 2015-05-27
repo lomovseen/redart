@@ -87,24 +87,24 @@ configure :build do
   # Use relative URLs
   activate :relative_assets
 
-  # Auto-generate multiple favicon versions
-  activate :favicon_maker do |f|
-    f.template_dir  = File.join(root, 'source/images/favicons/_template')
-    f.output_dir    = File.join(root, 'build/images/favicons')
-    f.icons = {
-      "favicon_template_hires.png" => [
-        { icon: "favicon-152x152.png" },
-        { icon: "favicon-120x120.png" },
-        { icon: "favicon-76x76.png" },
-        { icon: "favicon-60x60.png" },
-      ],
-      "favicon_template_lores.png" => [
-        { icon: "favicon-32x32.png" },
-        { icon: "favicon-16x16.png" },
-        { icon: "favicon.ico", size: "64x64,32x32,24x24,16x16" }
-      ]
-    }
-  end
+  # # Auto-generate multiple favicon versions
+  # activate :favicon_maker do |f|
+  #   f.template_dir  = File.join(root, 'source/images/favicons/_template')
+  #   f.output_dir    = File.join(root, 'build/images/favicons')
+  #   f.icons = {
+  #     "favicon_template_hires.png" => [
+  #       { icon: "favicon-152x152.png" },
+  #       { icon: "favicon-120x120.png" },
+  #       { icon: "favicon-76x76.png" },
+  #       { icon: "favicon-60x60.png" },
+  #     ],
+  #     "favicon_template_lores.png" => [
+  #       { icon: "favicon-32x32.png" },
+  #       { icon: "favicon-16x16.png" },
+  #       { icon: "favicon.ico", size: "64x64,32x32,24x24,16x16" }
+  #     ]
+  #   }
+  # end
 
 end
 
