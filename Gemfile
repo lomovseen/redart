@@ -1,16 +1,18 @@
-source 'https://rubygems.org'
+# If you have OpenSSL installed, we recommend updating
+# the following line to use "https"
+source "http://rubygems.org"
 
-gem 'middleman', '~> 3.3.12'
-gem 'middleman-deploy', '~> 1.0'
-gem 'middleman-gh-pages'
+gem "middleman", "~> 3.3.7"
+gem "middleman-deploy", "~> 1.0"
+gem "slim", "~>3.0.0"
+gem "bourbon", "~>4.0.2"
 
-gem 'slim', '>= 2.0'
-
-# Live-reloading plugin
-gem 'middleman-livereload', '~> 3.1.0'
-
-# for faster file watcher updates on windows:
-gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]
-
-# windows does not come with time zone data
-gem 'tzinfo-data', platforms: [:mswin, :mingw]
+gem "oj" # faster JS compiles
+gem "therubyracer" # faster JS compiles
+gem "middleman-minify-html", "~>3.4.0"
+gem "middleman-favicon-maker", "~>3.7" # needs ImageMagick (http://www.imagemagick.org/)
+gem "middleman-search_engine_sitemap"
+gem "middleman-dotenv", "~> 1.0"
+gem 'bootstrap-sass'
+# For faster file watcher updates on Windows:
+# gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
