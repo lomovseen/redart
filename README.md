@@ -11,7 +11,9 @@ rake publish  # Build and publish to Github Pages
 
 Middleman required files:
 ```
-	Gemfile
-	Rakefile
-	config.rb
+  Gemfile
+  Rakefile
+  config.rb
 ```
+
+If you are interested in good middleman layout - checkout this repo https://github.com/crtvhd/middleboy
