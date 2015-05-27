@@ -53,6 +53,7 @@ when "production"
   activate :deploy do |deploy|
     deploy.build_before = true
     deploy.method       = :git
+    deploy.branch = 'master'
     # deploy.host         = ENV["PRODUCTION_HOSTNAME"]
     # deploy.path         = ENV["PRODUCTION_PATH"]
     # deploy.user         = ENV["PRODUCTION_USER"]

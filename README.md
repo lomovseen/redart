@@ -5,8 +5,7 @@ Personal site of Andrey Lomov.
 
 ```
 bundle install
-rake build    # Compile all files into the build directory
-rake publish  # Build and publish to Github Pages
+rake deploy:production
 ```
 
 Middleman required files:

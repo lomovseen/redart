@@ -1,14 +1,16 @@
-namespace :deploy do
-  def deploy(env)
-    puts "Deploying to #{env}"
-    system "TARGET=#{env} bundle exec middleman deploy"
-  end
+require 'middleman-gh-pages'
 
-  task :staging do
-    deploy :staging
-  end
+# namespace :deploy do
+#   def deploy(env)
+#     puts "Deploying to #{env}"
+#     system "TARGET=#{env} bundle exec middleman deploy"
+#   end
 
-  task :production do
-    deploy :production
-  end
-end
+#   task :staging do
+#     deploy :staging
+#   end
+
+#   task :production do
+#     deploy :production
+#   end
+# end
