@@ -6,8 +6,12 @@ title: "Андрей Ломов - Видео и Фото Съемка"
 
   .row
     .col-xs-12.col-sm-5.col-lg-5.text-right
-      .foto
-        = image_tag 'avatar.jpg'
+      .flip-container style="float: right"
+        .flipper
+          .foto.front
+            = image_tag 'avatar.jpg'
+          .foto.back
+            = image_tag 'logo.png'
     .col-xs-12.col-sm-7.col-lg-7.text-left
       h1.title Андрей Ломов
       / h2.sub-sub-title Качественная Авторская
