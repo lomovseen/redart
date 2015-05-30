@@ -8,8 +8,16 @@ title: "Андрей Ломов - Видео и Фото Съемка"
     .col-xs-12.col-sm-5.col-lg-5.text-right
       .foto
         = image_tag 'avatar.jpg'
-    .col-xs-12.col-sm-7.col-lg-7
+    .col-xs-12.col-sm-7.col-lg-7.text-left
       h1.title Андрей Ломов
-      h2.sub-title Качественная Авторская Фото и Видео Съемка
-      h3.phones +375333219148, +375299042825
+      / h2.sub-sub-title Качественная Авторская
+      h2.sub-title Фото и Видео Съемка
+      h3
+        .phone = link_to '+375333219148', 'tel:+375333219148'
+
+      h3.social
+        = link_to('https://www.youtube.com/channel/UCTvFHp9jHrks7aT6Gnwk8nQ') do 
+          i.fa.fa-2x.fa-youtube
+        = link_to('https://vk.com/lomov_video') do 
+          i.fa.fa-2x.fa-vk
 

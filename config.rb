@@ -37,6 +37,7 @@ set :url_root, build? ? ENV["URL_PRODUCTION"] : ENV["URL_DEVELOPMENT"]
 set :css_dir,     "stylesheets"
 set :js_dir,      "javascripts"
 set :images_dir,  "images"
+set :fonts_dir,   "fonts-folder"
 
 # Prevent asset concatenation in development
 set :debug_assets, true
