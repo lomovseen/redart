@@ -1,27 +1,68 @@
 ---
-title: "Андрей Ломов - Видео и Фото Съемка"
+title: "Red Art Club Project"
 ---
 
-.container style="margin-top: 140px"
+#top-bar.container-fluid
+  .row.text-center
+    .col-xs-12.col-sm-4.col-sm-offset-8
+      ul.list-inline.social-buttons
+        li
+          = link_to('https://vk.com/red_art_grodno') do 
+            i.fa.fa-2x.fa-vk
+        li
+          = link_to('https://vk.com/red_art_grodno') do 
+            i.fa.fa-2x.fa-facebook
+        li 
+          = link_to('https://vk.com/red_art_grodno') do 
+            i.fa.fa-2x.fa-instagram
+        li
+          = link_to('https://vk.com/red_art_grodno') do 
+            i.fa.fa-2x.fa-twitter
+        li
+          = link_to('https://vk.com/red_art_grodno') do 
+            i.fa.fa-2x.fa-pinterest
+        li
+          = link_to('https://vk.com/red_art_grodno') do 
+            i.fa.fa-2x.fa-tumblr
+        li
+          = link_to('https://vk.com/red_art_grodno') do 
+            i.fa.fa-2x.fa-youtube
 
-  .row
-    .col-xs-12.col-sm-5.col-lg-5.text-right
-      .flip-container style="float: right"
-        .flipper
-          .foto.front
-            = image_tag 'avatar.jpg'
-          .foto.back
-            = image_tag 'logo.png'
-    .col-xs-12.col-sm-7.col-lg-7.text-left
-      h1.title Андрей Ломов
-      / h2.sub-sub-title Качественная Авторская
-      h2.sub-title Фото и Видео Съемка
-      h3
-        .phone = link_to '+375333219148', 'tel:+375333219148'
+section#logo
+  .container
+    .row
+      .col-xs-12
+        = link_to("/") do
+          = image_tag("logo.jpg", height: "320px")
 
-      h3.social
-        = link_to('https://www.youtube.com/channel/UCTvFHp9jHrks7aT6Gnwk8nQ') do 
-          i.fa.fa-2x.fa-youtube
-        = link_to('https://vk.com/lomov_video') do 
-          i.fa.fa-2x.fa-vk
+/ nav.navbar.navbar-default
+/   .container
+/     / .navbar-header
+/     navbar
+/       ul.list-inline
+/         li
+/           = link_to("Главная", 'https://vk.com/red_art_grodno')
+/         li
+/           = link_to("Галерея", 'https://vk.com/red_art_grodno')
+/         li
+/           = link_to("Контакты", 'https://vk.com/red_art_grodno')
 
+/ .container style="margin-top: 140px"
+
+/   .row
+/     .col-xs-12.col-sm-5.col-lg-5.text-right
+/       .flip-container style="float: right"
+/         .flipper
+/           .foto.front
+/             = image_tag 'avatar.jpg'
+/           .foto.back
+/             = image_tag 'logo.png'
+/     .col-xs-12.col-sm-7.col-lg-7.text-left
+/       h1.title Андрей Ломов
+/       h2.sub-title Фото и Видео Съемка
+/       h3
+/         .phone = link_to '+375333219148', 'tel:+375333219148'
+
+/       h3.social
+
+/ / .container-fluid.parallax-window

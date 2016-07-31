@@ -9,14 +9,46 @@
 @import "flip-container";
 
 @import url(http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic);
-body { font-family: 'PT Sans', sans-serif; }
+body {
+  font-family: roboto_monolight;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
 
-/*@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic);
-body { font-family: 'Open Sans Condensed', sans-serif; }
-*/
+a, body { color: #333; }
 
-/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,cyrillic);
-body { font-family: 'Open Sans', sans-serif; } */
+.fa {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.social-buttons {
+  margin: 0;
+  padding: 10px 0;
+}
+
+#top-bar {
+  background: #fff;
+  border-bottom: 1px solid;
+  border-color: #e5e5e5;
+}
+
+#logo {
+    padding: 31px 0;
+    background-color: #fff;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+}
 
 h1 {
   font-size: 66px;
