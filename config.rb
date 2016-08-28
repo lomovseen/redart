@@ -32,7 +32,7 @@ activate :sprockets
 
 # Set url root
 set :url_root, build? ? ENV["URL_PRODUCTION"] : ENV["URL_DEVELOPMENT"]
-
+set :url_root, "redart.club"
 # Asset paths
 set :css_dir,     "stylesheets"
 set :js_dir,      "javascripts"
