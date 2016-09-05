@@ -33,19 +33,52 @@ section#logo
     .row
       .col-xs-12
         = link_to("/") do
-          = image_tag("logo.jpg", height: "320px")
+          = image_tag("logo.jpg", height: "200px")
 
-/ nav.navbar.navbar-default
-/   .container
-/     / .navbar-header
-/     navbar
-/       ul.list-inline
-/         li
-/           = link_to("Главная", 'https://vk.com/red_art_grodno')
-/         li
-/           = link_to("Галерея", 'https://vk.com/red_art_grodno')
-/         li
-/           = link_to("Контакты", 'https://vk.com/red_art_grodno')
+
+nav.navbar.navbar-default
+  .container
+    / .navbar-header
+    #navbar.collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li
+          = link_to("O Red Art", 'https://vk.com/red_art_grodno')
+        li
+          = link_to("Афиши", 'https://vk.com/red_art_grodno')
+        li
+          = link_to("Галерея", 'https://vk.com/red_art_grodno')
+        li
+          = link_to("Сертификаты", 'https://vk.com/red_art_grodno')
+        li
+          = link_to("Художники", 'https://vk.com/red_art_grodno')
+        li
+          = link_to("Заведения", 'https://vk.com/red_art_grodno')
+        li
+          = link_to("Контакты", 'https://vk.com/red_art_grodno')
+
+#myCarousel.carousel.slide.carousel-fade.hidden-xs data-ride="carousel"
+  - data.carousel_items.each do |item|
+    ol.carousel-indicators
+      li.active data-target="#myCarousel" data-slide-to="0" 
+      li.active data-target="#myCarousel" data-slide-to="1"
+      li.active data-target="#myCarousel" data-slide-to="2" 
+      li.active data-target="#myCarousel" data-slide-to="3" 
+  
+    .carousel-inner role="listbox"
+      .item.active
+        = image_tag(item[:image])
+        .carousel-caption
+          h3 = item[:caption]
+
+  a.left.carousel-control href="#myCarousel" role="button" data-slide="prev"
+    span.glyphicon.glyphicon-chevron-left aria-hidden="true"
+    span.sr-only Previous
+
+  a.right.carousel-control href="#myCarousel" role="button" data-slide="next"
+    span class="glyphicon glyphicon-chevron-right" aria-hidden="true"
+    span.sr-only Next
+
+
 
 / .container style="margin-top: 140px"
 

@@ -18,6 +18,7 @@
     "respond": "~1.4.2",
     "masonry": "~4.1.1",
     "parallax.js": "~1.4.2",
-    "magnific-popup": "~1.1.0"
+    "magnific-popup": "~1.1.0",
+    "carousel": "~1.2.2"
   }
 }

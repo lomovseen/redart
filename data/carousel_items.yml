@@ -1,0 +1,9 @@
+---
+- image: "carousel-1.jpg"
+  caption: "Для встреч с друзьями"
+- image: "carousel-2.jpg"
+  caption: "Для творчества"
+- image: "carousel-3.jpg"
+  caption: "Для свиданий"
+- image: "carousel-4.jpg"
+  caption: "Для знакомства"

@@ -1,3 +1,8 @@
+/* ...
+*= require_tree ./vendor
+*/
+
+
 @charset "utf-8";
 
 @import "bootstrap";
@@ -8,10 +13,12 @@
 @import "font-awesome";
 @import "flip-container";
 
-@import url(http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic);
+
+// https://fonts.google.com/specimen/Poiret+One
+@import 'https://fonts.googleapis.com/css?family=Poiret+One';
 body {
   font-family: roboto_monolight;
-  font-size: 14px;
+  font-size: 1.5em;
   line-height: 1.42857143;
 }
 
@@ -43,7 +50,8 @@ a, body { color: #333; }
 
 #logo {
     padding: 31px 0;
-    background-color: #fff;
+    // height: 200px;
+    background-color: #f2f2f2;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -91,3 +99,17 @@ h1 {
     font-size: 0.9em;
   }
 }
+
+.navbar {
+  .navbar-collapse  {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Poiret One', cursive;
+  }
+  .navbar-nav {
+    height: 30px;
+    float: none;
+    display: inline-block;
+  }
+}
+
