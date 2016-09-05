@@ -1,6 +1,6 @@
 require "slim"
 require "uglifier"
-require 'bootstrap-sass'
+require "bootstrap-sass"
 
 # Prevent HTML minification in development
 ::Slim::Engine.set_options pretty: true, format: :html
@@ -37,7 +37,7 @@ set :url_root, "redart.club"
 set :css_dir,     "stylesheets"
 set :js_dir,      "javascripts"
 set :images_dir,  "images"
-set :fonts_dir,   "fonts-folder"
+set :fonts_dir,   "fonts"
 
 # Prevent asset concatenation in development
 set :debug_assets, true

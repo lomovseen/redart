@@ -13,8 +13,8 @@ gem "middleman-minify-html", "~>3.4.0"
 gem "middleman-favicon-maker", "~>3.7" # needs ImageMagick (http://www.imagemagick.org/)
 gem "middleman-search_engine_sitemap"
 gem "middleman-dotenv", "~> 1.0"
-gem 'bootstrap-sass'
-gem 'middleman-gh-pages'
-gem 'font-awesome-middleman'
+gem "bootstrap-sass"
+gem "middleman-gh-pages"
+gem "font-awesome-middleman"
 # For faster file watcher updates on Windows:
 # gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
