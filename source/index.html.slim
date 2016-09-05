@@ -56,20 +56,18 @@ nav.navbar.navbar-default
         li
           = link_to("Контакты", 'https://vk.com/red_art_grodno')
 
-#myCarousel.carousel.slide.carousel-fade.hidden-xs data-ride="carousel"
-  - data.carousel_items.each_with_index do |item, index|
-    / ol.carousel-indicators
-    /   li.active data-target="#myCarousel" data-slide-to="0" 
-    /   li.active data-target="#myCarousel" data-slide-to="1"
-    /   li.active data-target="#myCarousel" data-slide-to="2" 
-    /   li.active data-target="#myCarousel" data-slide-to="3" 
-  
-    .carousel-inner role="listbox"
-      div class=(index == 0 ? 'item active' : 'item')
-        = image_tag(item[:image])
-        .carousel-caption
-          .full-width.text-center
-            h1 = item[:caption]
+#myCarousel.carousel.slide data-ride="carousel"
+  ol.carousel-indicators
+    - (0..(data.carousel_items.length-1)).each do |i|
+      li class=(i == 0 ? 'active' : '') data-target="#myCarousel" data-slide-to=(i)
+
+  .carousel-inner role="listbox"
+    - data.carousel_items.each_with_index do |item, index|  
+        div class=(index == 0 ? 'item active' : 'item')
+          = image_tag(item[:image])
+          .carousel-caption
+            .full-width.text-center
+              h1 = item[:caption]
 
   a.left.carousel-control href="#myCarousel" role="button" data-slide="prev"
     span.glyphicon.glyphicon-chevron-left aria-hidden="true"
