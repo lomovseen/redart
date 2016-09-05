@@ -77,6 +77,13 @@ nav.navbar.navbar-default
     span class="glyphicon glyphicon-chevron-right" aria-hidden="true"
     span.sr-only Next
 
+.container
+  .row
+    - data.posters.each do |poster|
+      .col-sm-12.col-md-4.col-xs-3
+        = image_tag(poster[:image], width: "100%")
+        h3 = poster[:title]
+        p = poster[:description]
 
 
 / .container style="margin-top: 140px"

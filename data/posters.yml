@@ -1,4 +1,10 @@
 ---
-- image: "poster-1.jpg"
-  caption: "Для встреч с друзьями"
+- image: "posters/1.jpg"
+  title: "Для встреч с друзьями"
+  description: "Для встреч с друзьями"
+- image: "posters/2.jpg"
+  title: "Для встреч с друзьями"
+  description: "Для встреч с друзьями"
+- image: "posters/3.jpg"
+  title: "Для встреч с друзьями"
   description: "Для встреч с друзьями"
