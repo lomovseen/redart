@@ -7,26 +7,26 @@ title: "Red Art Club Project"
     .col-xs-12.col-sm-4.col-sm-offset-8
       ul.list-inline.social-buttons
         li
-          = link_to('https://vk.com/red_art_grodno') do 
+          = link_to("https://vk.com/redartgrodno") do 
             i.fa.fa-2x.fa-vk
         li
-          = link_to('https://vk.com/red_art_grodno') do 
+          = link_to("https://www.facebook.com/groups/1072044989558312/?pnref=story") do 
             i.fa.fa-2x.fa-facebook
         li 
-          = link_to('https://vk.com/red_art_grodno') do 
+          = link_to("https://www.instagram.com/redart_grodno") do 
             i.fa.fa-2x.fa-instagram
-        li
-          = link_to('https://vk.com/red_art_grodno') do 
-            i.fa.fa-2x.fa-twitter
-        li
-          = link_to('https://vk.com/red_art_grodno') do 
-            i.fa.fa-2x.fa-pinterest
-        li
-          = link_to('https://vk.com/red_art_grodno') do 
-            i.fa.fa-2x.fa-tumblr
-        li
-          = link_to('https://vk.com/red_art_grodno') do 
-            i.fa.fa-2x.fa-youtube
+        / li
+        /   = link_to('https://vk.com/red_art_grodno') do 
+        /     i.fa.fa-2x.fa-twitter
+        / li
+        /   = link_to('https://vk.com/red_art_grodno') do 
+        /     i.fa.fa-2x.fa-pinterest
+        / li
+        /   = link_to('https://vk.com/red_art_grodno') do 
+        /     i.fa.fa-2x.fa-tumblr
+        / li
+        /   = link_to('https://vk.com/red_art_grodno') do 
+        /     i.fa.fa-2x.fa-youtube
 
 section#logo
   .container
@@ -42,21 +42,21 @@ nav.navbar.navbar-default
     #navbar.collapse.navbar-collapse
       ul.nav.navbar-nav
         li
-          = link_to("O Red Art", 'https://vk.com/red_art_grodno')
+          = link_to("O Red Art", 'https://www.facebook.com/groups/1072044989558312/?pnref=story')
         li
-          = link_to("Афиши", 'https://vk.com/red_art_grodno')
+          = link_to("Афиши", '#afisha')
         li
-          = link_to("Галерея", 'https://vk.com/red_art_grodno')
+          = link_to("Галерея", 'https://vk.com/albums-123967973')
+        / li
+        /   = link_to("Сертификаты", 'https://vk.com/red_art_grodno')
+        / li
+        /   = link_to("Художники", 'https://vk.com/red_art_grodno')
+        / li
+        /   = link_to("Заведения", 'https://vk.com/red_art_grodno')
         li
-          = link_to("Сертификаты", 'https://vk.com/red_art_grodno')
-        li
-          = link_to("Художники", 'https://vk.com/red_art_grodno')
-        li
-          = link_to("Заведения", 'https://vk.com/red_art_grodno')
-        li
-          = link_to("Контакты", 'https://vk.com/red_art_grodno')
+          = link_to("Контакты", '#contacts')
 
-#myCarousel.carousel.slide data-ride="carousel"
+#myCarousel.carousel.slide.text-hide.hidden-xs data-ride="carousel"
   ol.carousel-indicators
     - (0..(data.carousel_items.length-1)).each do |i|
       li class=(i == 0 ? 'active' : '') data-target="#myCarousel" data-slide-to=(i)
@@ -78,13 +78,33 @@ nav.navbar.navbar-default
     span.sr-only Next
 
 .container
+  .row.text-center
+    .col-xs-12
+      h1.page-header.text-center#afisha Афиши
+  
+.container
   .row
     - data.posters.each do |poster|
-      .col-sm-12.col-md-4.col-xs-3
+      .col-xs-12.col-sm-6.col-md-4.col-xs-3
         = image_tag(poster[:image], width: "100%")
         h3 = poster[:title]
+        / .label.label-warning = poster[:date]
+        / .label.label-info = poster[:time]
         p = poster[:description]
 
+.container
+  .row.text-center
+    .col-xs-12
+      h1.page-header.text-center#contacts Контакты
+
+.container
+  .row
+    .col-xs-12
+      h1 
+        i.fa.fa-mobile style="font-size: 1em; margin-right: 20px"
+        = link_to '+37529 789 2662', 'tel:+375297892662'
+
+.spacer style="margin-top: 60px"
 
 / .container style="margin-top: 140px"
 

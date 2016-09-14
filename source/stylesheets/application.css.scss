@@ -13,7 +13,8 @@
 @import "font-awesome";
 
 // https://fonts.google.com/specimen/Poiret+One
-@import 'https://fonts.googleapis.com/css?family=Poiret+One';
+@import 'https://fonts.googleapis.com/css?family=Poiret+One&subset=cyrillic';
+
 body {
   font-family: roboto_monolight;
   font-size: 1.5em;
@@ -113,9 +114,21 @@ h1 {
 }
 
 #myCarousel {
-  height: 530px;
+  height: 300px;
   margin-bottom: 30px;
   font-family: 'Poiret One', cursive;
-  img { width: 100%; margin-top: -40px }
+  img { width: 100%; margin-top: -40px; }
+  .carousel-inner { height: 300px }
+  .carousel-caption { display: none }
+}
+
+
+
+h1 {
+  font-family: 'Poiret One', cursive;
+}
+
+#afisha {
+  margin: 0px 0 20px;
 }
 
