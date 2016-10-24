@@ -85,7 +85,7 @@ nav.navbar.navbar-default
   
 .container
   .row
-    - data.posters.each do |poster|
+    - data.posters.reverse.each do |poster|
       .col-xs-12.col-sm-6.col-md-4.col-xs-3 style="margin-bottom: 20px"
         = image_tag(poster[:image], width: "100%")
         h3 = poster[:title]
