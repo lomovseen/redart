@@ -134,7 +134,25 @@ h1,h3 {
 
 .poster {
   margin-bottom: 10px;
-  height: 590px;
+  height: 635px;
   img { height: 510px; }
+  .date, .time {
+    font-family: 'Poiret One', cursive;
+    font-style: italic;
+  }
+  .date {
+    height: 40px;
+    font-size: 1.3em;
+    .text {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    i {
+      font-size: 0.8em;
+      vertical-align: middle;
+    }
+  }
+  .time { font-size: 1.2em; }
 }
 
+.margin-right { margin-right: 10px; }
